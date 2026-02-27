@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #1a0026 0%, #000000 70%);
+  color: white;
+  overflow-x: hidden;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+
+.memoryCard {
+  display: flex;
+  gap: 40px;
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 16px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.memoryCard img {
+  width: 45%;
+  border-radius: 12px;
+}
+
+.memoryText {
+  width: 55%;
+  text-align: left;
+}
+
+.finalImg {
+  width: 400px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+/* Stars */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  animation: moveStars 120s linear infinite;
+  z-index: -2;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 5000px; }
+}
+
+/* Floating Hearts */
+.hearts {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.heart {
+  position: absolute;
+  bottom: -10%;
+  opacity: 0.3;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-120vh);
+  }
+}
+
+/* Fireworks */
+.fireworks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.spark {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 4px;
+  height: 4px;
+  background: gold;
+  border-radius: 50%;
+  animation: explode 1.5s ease-out infinite;
+}
+
+@keyframes explode {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(8); opacity: 0; }
+}
