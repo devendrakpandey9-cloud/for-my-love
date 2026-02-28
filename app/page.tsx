@@ -93,26 +93,35 @@ export default function Home() {
         </section>
       )}
 
-      {/* STEP 4 */}
-      {step === 4 && (
-        <section className="section">
-          <p>If you ever feel tired…</p>
-          <p>If you ever feel unappreciated…</p>
-          <p>If you ever feel alone…</p>
-          <p>You are my support.</p>
-          <p>You are my strength.</p>
-          <p>You are my peace.</p>
-          <p>And me?</p>
-          <p>
-            I promise to be your calm when you are overwhelmed.
-            Your protector when you feel weak.
-            Your biggest supporter in every dream.
-          </p>
-          <p>You are my safest place. My forever.</p>
-          <button onClick={next}>📸 See Our Memories</button>
-        </section>
-      )}
+     {/* STEP 4 */}
+{step === 4 && (
+  <section className="section">
+    <p>There will be busy days.</p>
+    <p>There will be hard days.</p>
+    <p>There will be days we don’t fully understand each other.</p>
 
+    <p>But through all of it —</p>
+
+    <p>You remain my strength.</p>
+    <p>My peace.</p>
+    <p>My person.</p>
+
+    <p>And I promise —</p>
+    <p>to show up.</p>
+    <p>To listen.</p>
+    <p>To grow.</p>
+    <p>To stand beside you in everything.</p>
+
+    <p>Not perfectly.</p>
+    <p>But honestly.</p>
+    <p>And always.</p>
+
+    <p>You are my safest place.</p>
+    <p>My forever.</p>
+
+    <button onClick={next}>📸 See Our Memories</button>
+  </section>
+)}
       {/* STEP 5 — MEMORIES IN YOUR EXACT ORDER */}
       {step === 5 && !showFinal && (
         <section className="section memories">
